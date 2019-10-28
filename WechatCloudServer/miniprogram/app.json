@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/userConsole/userConsole",
+    "pages/login/login",
+    "pages/regist/regist",
+    "pages/unlock/unlock",
+    "pages/map/map",
+    "pages/billing/billing",
+    "pages/scanresult/scanresult",
+    "pages/send/send"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "用于地图接口测试"
+    }
+  },
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/map/map",
+        "text": "Map",
+        "iconPath": "images/timg.jpg",
+        "selectPath": "images/123.jpg"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "Connect",
+        "iconPath": "images/timg.jpg",
+        "selectPath": "images/123.jpg"
+      },
+      {
+        "pagePath": "pages/userConsole/userConsole",
+        "text": "About Me",
+        "iconPath": "images/timg.jpg",
+        "selectPath": "images/123.jpg"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,49 @@
+<!--send.wxml-->  
+<view class="section">
+  
+  <view class="content">
+    <label class="weui_cell_bd weui_cell_primary">
+        请输入共享雨伞编号：{{senddatacount}}Bytes
+    </label>
+    <checkbox-group bindchange="checkboxChange">
+      <label class="checkbox" >
+        <checkbox value="HEX发" checked="{{items.checked}}"/>Hex发
+      </label>
+    </checkbox-group>
+    <checkbox-group bindchange="replaceChange">
+      <label class="checkbox" >
+        <checkbox value="连续发" checked="{{items.checked}}"/>连续发
+      </label>
+    </checkbox-group>    
+  </view>
+  <view class="text">
+    <textarea placeholder="请输入雨伞ID" class='textarea' value="{{sendddata}}" bindinput='SendInput'  />
+  </view>
+
+  <view class="content">
+  {{mac}}
+    <label class="weui_cell_bd weui_cell_primary">
+        接收：{{receivcedatacount}}Bytes
+    </label>
+    <checkbox-group bindchange="revChange">
+      <label class="checkbox" wx:for="{{item}}">
+        <checkbox value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+      </label>
+    </checkbox-group>
+  </view>
+  <view class="text">
+    <textarea placeholder="Test" class='textarea' value='{{receivcedata}}'  />
+  </view>
+  
+  <view>
+    <radio-group class="radio-group weui_cell_bd" style='width:40%;vertical-align:top' bindchange="radioChange">
+      <label class="radio" wx:for="{{radioItems}}">
+        <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+      </label>
+    </radio-group>
+    <view class="weui_btn_area weui_cell_bd" style='width:60%'>
+      <a bindtap="senddata" href="javascript:" class="weui_btn weui_btn_mini weui_btn_primary">发送</a>
+      <a bindtap="btnClear" href="javascript:" class="weui_btn weui_btn_mini weui_btn_primary">清除</a>
+    </view>
+  </view>  
+</view>

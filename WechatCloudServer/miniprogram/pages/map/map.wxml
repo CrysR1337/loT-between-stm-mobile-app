@@ -1,0 +1,16 @@
+<!--pages/map/map.wxml-->
+
+<!--index.wxml-->
+
+<view class='container'>
+  <map id="maps"
+  longitude="{{longitude}}" 
+  latitude="{{latitude}}" 
+  scale="{{scale}}"
+  polyline="{{polyline}}"
+  markers="{{markers}}" 
+  covers="{{covers}}" 
+  controls="{{controls}}"
+  bindcontroltap="bindcontroltap"
+  show-location/>
+</view>

@@ -1,0 +1,22 @@
+/* pages/map/map.wxss */
+
+/**index.wxss**/
+
+/* 不加page无法全屏 */
+
+.container{
+  position:relative;
+  width:100%;
+  height:100vh;
+}
+
+#maps {
+  position:absolute;
+  left:0;
+  top:0;
+  right:0;
+  bottom:0;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}
